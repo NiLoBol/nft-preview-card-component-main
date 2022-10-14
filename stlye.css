@@ -36,6 +36,7 @@ body{
     background-color: var(--VerydarkbluecardBG);
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 1px 1px 20px  hsl(217, 54%, 5%);
 }
 .card-img{
     width: 300px;
