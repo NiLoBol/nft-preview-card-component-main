@@ -1,0 +1,105 @@
+
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan2: hsla(178, 100%, 50%,0.5);
+    
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsla(0, 0%, 100%,100%);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--VerydarkbluemainBG);
+    color: var(--White);
+    font-size: 18px;
+    font-weight: 300;
+}
+.w-400{
+    font-weight: 400;
+}
+.w-600{
+    font-weight: 600;
+}
+.card{
+    width: 340px;
+    height: 600px;
+    background-color: var(--VerydarkbluecardBG);
+    border-radius: 20px;
+    padding: 20px;
+}
+.card-img{
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background:none;
+}
+.card-img:hover{
+    cursor: pointer;
+    background: #0000ff;
+}
+.icon-profile{
+    width: 40px;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.color-cyan{
+    color: var(--Cyan);
+}
+.color-softblue{
+    color: var(--Softblue);
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.eth{
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.color-cyan-hovar:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.overlay {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    top: 20px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--Cyan2);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    color: var(--White);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.con:hover .overlay {
+    opacity: 1;
+}
